@@ -1,0 +1,182 @@
+body {
+  background: #f8f8f8;
+  font-family: "Montserrat", sans-serif;
+}
+
+.bg-container {
+  background: #D9D9D9;
+  /* border: 2px solid #D9D9D9; */
+  border-radius: 5px;
+  padding: 40px;
+}
+
+a {
+  display: inline-block;
+}
+
+#social-media {
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+.social-text {
+  font-weight: 900;
+  position: relative;
+  font-size: 1rem;
+  z-index: 1;
+}
+
+.icon {
+  margin: 20px 10px ;
+  padding: 20px;
+  background: white;
+  border-radius: 5px;
+  box-shadow: 0 4px 4px 0 rgb(0 0 0 / 25%);
+  
+}
+.png-icon {
+  display: flex;
+  justify-content: center;
+  padding: 8px;
+  border-radius: 5px;
+  border-style: dotted;
+  border-color: #f8f8f8;
+}
+.nunc-logo {
+  display: block;
+  text-align: center;
+}
+
+.nunc-logo img {
+  height: 70px;
+  margin: 10px 0;
+  text-align: center;
+}
+
+.card {
+  padding: 20px;
+  border: none;
+  position: relative;
+  border-radius: 8px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  transition: all 0.3s ease-in-out, background 0s, color 0s, border-color 0s;
+  cursor: pointer;
+  overflow: hidden;
+  min-width: 100px;
+  margin-bottom: 20px;
+}
+
+.card:hover .tool-name {
+  visibility: hidden;
+ 
+}
+
+.open {
+  position: absolute;
+  left: 0;
+  display: grid;
+  border-radius: 8px;
+  place-content: center;
+  height: 100%;
+  width: 100%;
+  bottom: -100%;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 1s ease-in-out;
+}
+
+.open .open-text {
+  font-weight: 900;
+  color: #fff;
+  text-align: center;
+}
+
+.open .link {
+  position: absolute;
+  display: flex;
+  right: 0;
+  top: 0;
+  color: #fff;
+}
+
+.link img {
+  height: 50px;
+  padding: 10px;
+}
+
+.card:hover .open {
+  visibility: visible;
+  -webkit-box-transform: translate(0, 100%);
+  transform: translate(0, -100%);
+  
+}
+
+.tool-icon {
+  height: 100px;
+  width: 100px;
+  margin: 0 auto;
+  border-radius: 5px;
+  border-color: #f8f8f8;
+}
+
+.tool-name {
+  color: #636363;
+  font-size: 1rem;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.nav-icon {
+  width: 25px;
+}
+
+.social-text h4 {
+  /* background: #d9d9d9; */
+  margin: 0 auto;
+  border-radius: 5px;
+}
+.divider {
+  position: relative;
+}
+
+
+@media (min-width: 786px) {
+  .nunc-logo img {
+    height: 100px;
+  }
+  .tool-name {
+    font-size: medium;
+  }
+  .card{
+    margin-bottom: 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+ 
+  .icon {
+    margin: 8px 6px;
+    padding: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+
+  .tool-icon {
+    width: 100%;
+  }
+  
+  #social-media {
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+}
+
+
+
+
+
+
